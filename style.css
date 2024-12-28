@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{ 
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Be Vietnam Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+}
+
+.hide{
+    display: none !important;
+}
+
+.navLinks{
+    position: fixed;
+    z-index: 1000;
+}
+
+.mobile{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 50vh;
+    border-radius: .5rem;
+    margin-top: 3rem;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#errorMessage{
+    color: var(--Bright-Red);
+}
+
+.mobile a{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mobileNav{
+    margin-top: 3rem;
+}
+.mobileNav nav{   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.desktopNav nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 86vw;
+    /* border: 1px solid; */
+    padding: 4.5rem;    
+}
+
+.desktopNav a{
+    color: black;
+    font-size: 12px;
+}
+
+.desktop{
+    /* border: 1px solid; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopNav button{
+    width: 14%;
+}
+
+p{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.sectionOne img{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sectionOne h1{
+    font-size: 3rem;
+    color: var(--Dark-Blue);
+}
+
+button{
+    padding: 1rem;
+    background-color: var(--Bright-Red);
+    border: none;
+    color: white;
+    border-radius: 1.6rem;
+    width: 40%;
+    box-shadow: 0px 2px 10px var(--Bright-Red);
+    font-size: 18px;
+}
+
+.sectionTwo{
+    margin-top: 8rem;
+}
+
+.heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--Very-Pale-Red);
+}
+
+.number{
+    padding: 1rem;
+    background-color: var(--Bright-Red);
+    border: none;
+    color: white;
+    border-radius: 1.6rem;
+    width: 10%;
+    text-align: center;
+}
+
+.manageItem{
+    text-align: left;
+    margin-top: 4rem;
+    padding-left: 1rem;
+}
+
+
+.users{
+    width: 70%;
+    min-height: inherit;
+}
+
+.users{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+    overflow: hidden;   
+}
+
+.userComment{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userComment:not(.active){
+    top: 0;
+    left: -100%;
+}
+
+
+.sectionThree button{
+    width: 13%;
+    /* color: yellow; */
+}
+
+.indicators{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 3px;
+    border: 3px solid #aaa;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.indicators .active{
+    background-color: var(--Bright-Red) ;
+}
+
+.sectionFour{
+    padding: 1rem;
+    background-color: var(--Bright-Red);
+    color: white;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 50vh;
+}
+
+.sectionFour button{
+    background-color: white;
+    color: var(--Bright-Red);
+}
+
+.sectionFour h1{
+    font-size: 3rem;
+}
+
+footer{
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    padding-top: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email{
+    display: flex;
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 1.6rem;
+    width: 90%;
+    font-size: 18px;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:90%;
+    padding-left: 3rem;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    gap: 1.6rem;
+}
+
+.socials{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials img{
+    width: 10%;
+}
+
+.logo{
+    width: 50%;
+}
+.img{
+    display: none;
+}
+
+.center{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+@media (min-width: 800px){
+    .img{
+        position: absolute;
+        background-image: url(images/bg-tablet-pattern.svg);
+        width: 100%;
+        height: 90vh;
+        border: 1px solid black;
+        top: 0;
+        left: 0;
+    }
+
+    button:hover{
+        background-color: hsl(12, 78%, 70%);
+        cursor: pointer;
+    }
+
+    nav a:hover{
+        color: var(--Dark-Grayish-Blue);
+    }
+
+    .desktopNav{
+        display: flex;
+    }
+
+    .sectionOne{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        background-image: url(images/bg-tablet-pattern.svg);
+        background-position-x: right;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        h1{
+            width: 80%;
+        }
+
+    }
+
+    .sectionOne img{
+        width: 50%;
+    }
+
+    .sectionOne p{
+        width: 65%;
+    }
+
+    .sectionOne div{
+        width: 45%;
+    }
+
+    .center{
+        padding-left: 0;
+    }
+
+    .sectionTwo{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem;
+        padding-top: 1rem;
+        margin-left: 2rem;
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    .sectionTwo .center, h1{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .sectionTwo .center{
+        width: 66%;
+        margin-top: 12rem;
+    }
+
+    .manageItems{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        margin-top: 1rem;
+    }
+
+    .manageItem{
+        margin-top: 0;
+    }
+
+    .manageItem p{
+        width: 80%;
+        margin-left: 17%;
+        margin-top: 0;
+    }
+
+    .heading{
+        background-color: transparent;
+    }
+
+    .number{
+        padding: .5rem;
+    }
+
+    .sectionThree{
+        box-sizing: border-box;
+        min-height: 450px;
+    }
+
+
+
+    .sectionFour{
+        height: 12vh;
+        /* color:2 yellow; */
+        display: flex;
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        padding-left: 6rem;
+        background-image: url(images/bg-simplify-section-desktop.svg);
+        background-position-y: -8rem;
+        h1{
+            font-size: 2.5rem;
+            width: 40%;
+        }
+        button{
+            width: 20%;
+        }
+    }
+
+    .sectionFour button:hover{
+        color: hsl(12, 78%, 70%);
+        background-color: white;
+    }   
+
+    footer{
+        height: 40vh;
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    .logo{
+        margin-top: -8rem;
+        margin-left: -25rem;
+    }
+
+    .socials{
+        margin-top: 5rem;
+        margin-left: -15rem;
+        width: 50%;
+    }
+
+    .email{
+        margin-top: -8rem;
+    }
+
+    footer a:hover{
+        color: var(--Bright-Red);
+    }
+    .bottom{
+        transform: translateX(50rem);
+        width: 90%;
+        align-self: flex-end;
+        margin-bottom: 4rem;
+        
+    }
+}
+
+@keyframes next1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: -100%;
+    }
+}
+
+@keyframes next2{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
+
+@keyframes prev1{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes prev2{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
