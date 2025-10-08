@@ -318,7 +318,7 @@ input{
         color: var(--Dark-Grayish-Blue);
     }
 
-    .desktopNav{
+    .desktopNav nav{
         display: flex;
     }
     .mobileNav{
@@ -504,3 +504,4 @@ input{
     }
 
 }
+
