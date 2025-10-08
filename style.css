@@ -321,7 +321,9 @@ input{
     .desktopNav{
         display: flex;
     }
-
+    .mobileNav{
+        display: none;
+    }
     .sectionOne{
         display: flex;
         flex-direction: row-reverse;
@@ -500,4 +502,5 @@ input{
     to{
         left: 0%;
     }
+
 }
