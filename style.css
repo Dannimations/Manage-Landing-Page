@@ -319,7 +319,7 @@ input{
     }
 
     .desktopNav nav{
-        display: flex;
+        display: flex !important;
     }
     .mobileNav{
         display: none;
@@ -504,4 +504,5 @@ input{
     }
 
 }
+
 
