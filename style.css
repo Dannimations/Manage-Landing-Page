@@ -29,7 +29,7 @@ body{
     display: none !important;
 }
 
-.navLinks{
+.mobileNav .navLinks{
     position: fixed;
     z-index: 1000;
 }
@@ -504,5 +504,6 @@ input{
     }
 
 }
+
 
 
